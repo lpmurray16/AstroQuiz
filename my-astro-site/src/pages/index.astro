@@ -1,0 +1,83 @@
+---
+import Layout from '../layouts/Layout.astro';
+import Quiz from '../components/Quiz.jsx';
+---
+
+<Layout title="Simple Quiz App">
+	<main>
+		<h1 class="title">Harry Potter Quiz App</h1>
+		<p class="subtitle">
+			A very simple quiz app built with <a href="https://astro.build" target="_blank"
+				rel="noopener noreferrer">Astro</a>🚀 and <a href="https://reactjs.org" target="_blank"
+				rel="noopener noreferrer">React</a>⚛️
+		</p>
+
+		<section class="quiz__wrapper quiz__wrapper--outside">
+			<div class="quiz__wrapper quiz__wrapper--inner">
+				<Quiz client:load />
+			</div>
+		</section>
+
+		<section>
+			<p class="subtitle subtitle__space-top">
+				Check out my site <a href="https://logan-murray.dev" target="_blank"
+					rel="noopener noreferrer">logan-murray.dev</a> for more.
+			</p>
+		</section>
+
+	</main>
+</Layout>
+
+<style lang="scss">
+	main {
+		padding: 1em;
+	}
+
+	a {
+		color: var(--primary-color);
+		text-decoration: none;
+		transition: all 0.5s ease;
+
+		&:hover {
+			text-decoration: underline;
+		}
+	}
+
+	.quiz__wrapper {
+		&--outside {
+			max-width: 250px;
+			max-width: 80%;
+			margin: 0 auto;
+			padding: 1rem;
+			position: relative;
+			padding: 8px;
+			border-radius: 5px;
+			background: linear-gradient(-45deg, rgb(214, 214, 255), var(--primary-color), rgb(214, 214, 255), var(--primary-color));
+			background-size: 400% 400%;
+			animation: gradientWave 9s ease infinite;
+
+			@media screen and (max-width: 600px) {
+				max-width: 95%;
+			}
+		}
+
+		&--inner {
+			background: var(--color-bg);
+			padding: 0;
+		}
+	}
+
+	@keyframes gradientWave {
+		0% {
+			background-position: 0% 50%;
+		}
+
+		50% {
+			background-position: 100% 50%;
+		}
+
+		100% {
+			background-position: 0% 50%;
+		}
+	}
+</style>
