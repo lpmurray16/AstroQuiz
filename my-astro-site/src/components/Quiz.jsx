@@ -75,7 +75,7 @@ const Quiz = () => {
                                 } else if (score / questionList.length > 0.25) {
                                     return " You're terrible, kys.";
                                 } else {
-                                    return " You need to jump in a lava lake. Or read more HP books.";
+                                    return " You need to jump in a lake of lava. Or read more HP books.";
                                 }
                             })()}
                         </p>
