@@ -2,6 +2,8 @@ import { useState, useEffect } from "react";
 import questionList from "../config/questions.js";
 import "../styles/quiz.css";
 
+// should probably separate some components into their own files
+
 const Quiz = () => {
     const [question, setQuestion] = useState(questionList[0]);
     const [answer, setAnswer] = useState("");
