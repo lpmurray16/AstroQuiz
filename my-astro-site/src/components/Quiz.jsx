@@ -66,8 +66,8 @@ const Quiz = () => {
                             {questionList.length} questions correctly.
                         </h2>
                         <p>
-                            {(score / questionList.length) * 100}% of the
-                            questions were answered correctly. <br></br>
+                            {((score / questionList.length) * 100).toFixed(2)}%
+                            of the questions were answered correctly. <br></br>
                             <br></br>
                             {(() => {
                                 if (score / questionList.length > 0.75) {

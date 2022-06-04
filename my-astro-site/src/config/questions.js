@@ -100,7 +100,12 @@ const questionList = [
     {
         id: 14,
         question: "Who killed the Gray Lady?",
-        choices: ["Salazar Slytherin", "The Bloody Baron", "Tom Riddle", ""],
+        choices: [
+            "Salazar Slytherin",
+            "The Bloody Baron",
+            "Tom Riddle",
+            "The Fat Friar",
+        ],
         correctAnswer: "The Bloody Baron",
     },
     {
