@@ -134,10 +134,12 @@ const Quiz = () => {
                                 {isCorrect ? (
                                     <div className="quiz-question__feedback--correct">
                                         <p>Correct!✅</p>
+                                        <img src="https://media4.giphy.com/media/5tlq0pRndGu8U/giphy.gif?cid=ecf05e47t5efrmocamzkjkbdq4hseb1v4c8vk6chpzsax84z&rid=giphy.gif&ct=g" />
                                     </div>
                                 ) : (
                                     <div className="quiz-question__feedback--incorrect">
                                         <p>Incorrect!❌</p>
+                                        <img src="https://media4.giphy.com/media/d6Ni9aqSatPfq/giphy.gif?cid=ecf05e47t5efrmocamzkjkbdq4hseb1v4c8vk6chpzsax84z&rid=giphy.gif&ct=g" />
                                         <p>
                                             The correct answer was:{" "}
                                             <span
