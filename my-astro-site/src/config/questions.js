@@ -56,8 +56,8 @@ const questionList = [
     {
         id: 9,
         question: "What is the name of Ron Weasley's oldest sibling?",
-        choices: ["George", "Bill", "Fred", "Charlie"],
-        correctAnswer: "Charlie",
+        choices: ["George", "Charlie", "Fred", "Bill"],
+        correctAnswer: "Bill",
     },
     {
         id: 10,
