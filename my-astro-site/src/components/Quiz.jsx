@@ -62,7 +62,8 @@ const Quiz = () => {
                 {isOver ? (
                     <div className="quiz-question__over">
                         <h2 className="quiz-question__text">
-                            That's All Folks! You scored {score} out of{" "}
+                            That's All Folks! <br></br>
+                            <br></br>You scored {score} out of{" "}
                             {questionList.length} questions correctly.
                         </h2>
                         <p>
@@ -73,15 +74,18 @@ const Quiz = () => {
                                 if (score / questionList.length > 0.75) {
                                     return " You're a Harry Potter nerd!";
                                 } else if (score / questionList.length > 0.5) {
-                                    return " You can do better. Just saying.";
+                                    return " You did alright, I guess.";
                                 } else if (score / questionList.length > 0.25) {
-                                    return " You're terrible, kys.";
+                                    return " You did awful. You should try again after reading more Harry Potter.";
                                 } else {
-                                    return " You need to jump in a lake of lava. Or read more HP books.";
+                                    return " Have you ever even read or watched Harry Potter?";
                                 }
                             })()}
                         </p>
-                        <button className="button" onClick={handleRestart}>
+                        <button
+                            className="button button--restart"
+                            onClick={handleRestart}
+                        >
                             Restart
                         </button>
                     </div>
@@ -115,7 +119,7 @@ const Quiz = () => {
                                 }}
                                 className="button"
                             >
-                                Submit
+                                Submit Answer
                             </button>
                         </form>
                         <div className="quiz-question__next">
