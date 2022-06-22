@@ -72,7 +72,7 @@ const Quiz = () => {
                             <br></br>
                             {(() => {
                                 if (score / questionList.length > 0.75) {
-                                    return " You're a Harry Potter nerd!";
+                                    return " You're a Harry Potter NERD!";
                                 } else if (score / questionList.length > 0.5) {
                                     return " You did alright, I guess.";
                                 } else if (score / questionList.length > 0.25) {
